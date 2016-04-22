@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 	xmlns="http://xamarin.com/schemas/2014/forms" 
+				xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+				xmlns:cross="clr-namespace:Cross.Pie.Forms;assembly=Cross.Pie.Forms"
+				xmlns:local="clr-namespace:Cross.Pie.Forms.Sample;assembly=Cross.Pie.Forms.Sample"
+				x:Class="Cross.Pie.Forms.Sample.AreaPage">
+	<ContentPage.Content>
+		<Grid BackgroundColor="Silver" RowSpacing="0">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="20*"/>
+				<RowDefinition Height="1.5*"/>
+				<RowDefinition Height="10*"/>
+			</Grid.RowDefinitions>
+
+			<cross:CrossPie Grid.Row="0" x:Name="XPie" Title="Land Area" TitleColor="Navy" IsTitleOnTop="false">
+			</cross:CrossPie>
+
+			<local:AreaHeaderView Grid.Row="1" />
+
+			<ListView Grid.Row="2" x:Name="List" RowHeight="26" BackgroundColor="Gray">
+			</ListView>
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>

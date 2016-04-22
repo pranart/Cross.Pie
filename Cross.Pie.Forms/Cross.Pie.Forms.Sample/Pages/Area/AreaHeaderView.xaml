@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Cross.Pie.Forms.Sample.AreaHeaderView">
+	<ContentView.Content>
+		<Grid BackgroundColor="Yellow">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width= "2.5*"/>
+				<ColumnDefinition Width= "3*"/>
+				<ColumnDefinition Width= "5*"/>
+			</Grid.ColumnDefinitions>
+
+			<Label Grid.Column="0" Text="Legend" TextColor="Black"
+				HorizontalOptions="StartAndExpand" />
+
+			<Label Grid.Column="1" Text="Country  " TextColor="Black"
+				HorizontalOptions="Start" />
+			<Label Grid.Column="2" Text="Percent" TextColor="Black"
+				HorizontalOptions="Center" />
+		</Grid>
+
+	</ContentView.Content>
+</ContentView>

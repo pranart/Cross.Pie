@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell 	xmlns="http://xamarin.com/schemas/2014/forms" 
+			xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			x:Class="Cross.Pie.Forms.Sample.AreaCell">
+	<ViewCell.View>
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width= "1*"/>
+				<ColumnDefinition Width=" 5*"/>
+				<ColumnDefinition Width= "5*"/>
+			</Grid.ColumnDefinitions>
+
+			<Frame Grid.Column="0" Padding="5" HasShadow="false" 
+				OutlineColor="Transparent" BackgroundColor="Transparent">
+
+				<Frame.Content>
+					<BoxView Color="{Binding Color}"/>
+				</Frame.Content>
+			</Frame>
+
+			<Label Grid.Column="1" Text="{Binding Country}"
+				HorizontalOptions="Center" />
+			<Label Grid.Column="2" Text="{Binding Value,StringFormat='{0}%'}"
+				HorizontalOptions="Center" />
+		</Grid>
+	</ViewCell.View>
+</ViewCell>
