@@ -86,12 +86,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Cross.Pie.Forms\Cross.Pie.Forms.csproj">
-      <Project>{72364B6F-5197-43E5-82CB-9B9B18FA87FD}</Project>
-      <Name>Cross.Pie.Forms</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="Pages\" />
     <Folder Include="Pages\Area\" />
   </ItemGroup>

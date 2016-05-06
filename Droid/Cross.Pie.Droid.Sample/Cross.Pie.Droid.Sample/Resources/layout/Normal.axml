@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Cross.Pie.Droid.CrossPie
+        android:id="@+id/myPie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        is_enabled="true"
+        is_name_visible="true"
+        background_color="#0000FF"
+        is_percent_visible="true"
+        is_value_visible="true"
+        is_single_selectable="true"
+        is_title_on_top="false"
+        percent_color="#000FF0"
+        text_color="#0FF000"
+        value_color="#FF0000"
+        title_color="#a0a000"
+        pull_ratio="0.2"
+        start_angle="45.0"
+        title="Please see Normal.axml" />
+</LinearLayout>

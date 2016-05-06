@@ -13,6 +13,7 @@ namespace Cross.Pie.Forms
 	{
 		List<PieItem> ListItems { get; set; } = new List<PieItem>();
 
+		#region BindableProperty
 		public static readonly BindableProperty FontProperty = BindableProperty.Create<CrossPie,NGraphics.Font> (a=>a.Font, new NGraphics.Font());
 		public NGraphics.Font Font {
 			get{ return (NGraphics.Font)GetValue (FontProperty); }
@@ -116,16 +117,19 @@ namespace Cross.Pie.Forms
 				SetValue (PullRatioProperty, value); 
 			}
 		}
-			
+		#endregion	
+
 		public CrossPie ()
 		{
 			VerticalOptions = LayoutOptions.Fill;
 			HorizontalOptions = LayoutOptions.Fill;
 		}
+
 		public void Clear()
 		{
 			ListItems.Clear ();
 		}
+
 		public void ClearAllPull()
 		{
 			foreach (var each in ListItems)
@@ -133,15 +137,9 @@ namespace Cross.Pie.Forms
 				each.IsPull = false;
 			}
 		}
+
 		public bool Add(PieItem add)
 		{
-			#if LIMIT
-			if(ListItems.Count >= 7)
-			{
-			return false;
-			}
-			#endif
-
 			if (add == null)
 				return false;
 			if (add.Value <= 0.0)
@@ -154,6 +152,7 @@ namespace Cross.Pie.Forms
 			ListItems.Add (add);
 			return true;
 		}
+
 		public bool AddRange(IEnumerable<PieItem> pieItems)
 		{
 			bool isSuccess = true;

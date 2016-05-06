@@ -17,9 +17,6 @@ namespace Cross.Pie.Forms.Sample
 			pages.Children.Add (new AreaPage() 		{ Title="Area"    }	);
 
 			MainPage = pages;
-
-
-
 		}
 	}
 }
